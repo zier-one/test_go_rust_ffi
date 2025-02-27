@@ -1,5 +1,8 @@
 ```
-cargo build
-CGO_ENABLED=1 go build -o main main.go
-./main
+cargo build --release
+
+# ffi
+GO111MODULE=on CGO_ENABLED=1 go run ./bench/ffi_base/main.go
+
+# tokio & go channel
 ```
