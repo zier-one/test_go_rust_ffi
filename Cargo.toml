@@ -10,3 +10,4 @@ crate-type = ["staticlib"]
 
 [dependencies]
 libc = "0.2.170"
+tokio = { version = "1", features = ["full"] }
